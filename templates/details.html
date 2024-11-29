@@ -6,14 +6,17 @@
             class="card-image"
             src="{{ row[4] }}"
             alt="Product image for the {{ row[1] }} VSCode extension."/> -->
-        <h1 class="card-name">{{ row[0] }}</h1>
+        <h1 class="card-name">{{ row[1] }}</h1>
         <!-- <p class="card-about">{{ row[3] }}</p> -->
-        <form action ="/details.html" method = "POST">
-            <button class="btn" name = "area" value="{{  row[0]  }}">{{  row[0]  }}</button>
-        </form>
+        <!-- <form action ="/details.html" method = "POST"> -->
+            <button class="btn" name = "area" value="{{  row[1]  }}">Read More</button>
+        <!-- </form> -->
         
         <!-- "window.location.href = '{{ url_for('serve_details') }}' -->
         </div>
     {% endfor %}
 </div>
+<script>
+
+</script>
 {% endblock %}
